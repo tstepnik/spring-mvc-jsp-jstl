@@ -6,12 +6,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import pl.javastart.model.Article;
 
 @Controller
 public class ArticleController {
 
-    @PostMapping("/")
+    @PostMapping("/add")
     public String addArticle(
             @RequestParam String title,
             @RequestParam String content,
